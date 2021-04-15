@@ -1,1 +1,3 @@
-# smart-contract
+# Ethereum smart contract repository.
+
+#WIP
