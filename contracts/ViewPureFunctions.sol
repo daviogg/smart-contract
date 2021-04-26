@@ -28,12 +28,13 @@ contract FunctionsExample {
         balanceReceived[msg.sender] -= _amount; 
         _to.transfer(_amount);
     }
-    
-    function getOwner() public view returns(address) {
-        return owner;
-    }
 
     function convertWeiToEth(uint _amountInWei) public pure returns(uint) {
         return _amountInWei / 1 ether;
     }
+
+    function getOwner() public view returns(address) {
+        return owner;
+    }
+    
 }
