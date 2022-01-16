@@ -26,7 +26,6 @@ contract Wallet is Ownable{
         if(!(msg.sender == owner())){
             reduceAllowance(msg.sender, _amount);
         }
-
         _to.transfer(_amount);
     }
 
